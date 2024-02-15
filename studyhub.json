@@ -1,6 +1,7 @@
 [{
     "name" : "MySQL + PhpMyadmin",
     "description" : "Uniquement MySQL avec PhpMyadmin",
+    "vendor": "hackoeil",
     "author" : "Cyril",
     "directory" : "mysql_phpmyadmin",
     "files" : [
@@ -10,6 +11,7 @@
 {
     "name" : "Serveur Mongo + MongoDB express",
     "description" : "Uniquement Mongo avec MongoDB Express",
+    "vendor": "hackoeil",
     "author" : "Cyril",
     "directory" : "mongo_mongodb_express",
     "files" : [
