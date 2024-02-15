@@ -1,0 +1,18 @@
+[{
+    "name" : "MySQL + PhpMyadmin",
+    "description" : "Uniquement MySQL avec PhpMyadmin",
+    "author" : "Cyril",
+    "directory" : "mysql_phpmyadmin",
+    "files" : [
+        { "link" : "", "checksum" : ""}
+    ]
+},
+{
+    "name" : "Serveur Mongo + MongoDB express",
+    "description" : "Uniquement Mongo avec MongoDB Express",
+    "author" : "Cyril",
+    "directory" : "mongo_mongodb_express",
+    "files" : [
+        { "link" : "", "checksum" : ""}
+    ]
+}]
