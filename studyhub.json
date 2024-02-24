@@ -13,14 +13,14 @@
     ]
 },
 {
-    "name" : "MySQL + PhpMyadmin",
-    "description" : "Uniquement MySQL avec PhpMyadmin",
+    "name" : "Apache / PHP / MySQL + PhpMyadmin",
+    "description" : "Apache, PHP, MySQL avec PhpMyadmin",
     "vendor": "hackoeil",
     "author" : "Cyril",
     "directory" : "apache_mysql_php",
     "files" : [
         { 
-            "link" : "https://github.com/Hack-Oeil/repo-original-study-hub/blob/master/study-hub/apache_mysql_php/study-hub.yaml", 
+            "link" : "https://raw.githubusercontent.com/Hack-Oeil/repo-original-study-hub/master/study-hub/apache_mysql_php/study-hub.yaml", 
             "checksum" : ""
         }
     ]
@@ -33,7 +33,7 @@
     "directory" : "nodejs_mongodb",
     "files" : [
         { 
-            "link" : "https://github.com/Hack-Oeil/repo-original-study-hub/blob/master/study-hub/nodejs_mongodb/study-hub.yaml", 
+            "link" : "https://raw.githubusercontent.com/Hack-Oeil/repo-original-study-hub/master/study-hub/nodejs_mongodb/study-hub.yaml", 
             "checksum" : ""
         }
     ]
@@ -46,7 +46,7 @@
     "directory" : "nodejs_mysql",
     "files" : [
         { 
-            "link" : "https://github.com/Hack-Oeil/repo-original-study-hub/blob/master/study-hub/nodejs_mysql/study-hub.yaml", 
+            "link" : "https://raw.githubusercontent.com/Hack-Oeil/repo-original-study-hub/master/study-hub/nodejs_mysql/study-hub.yaml", 
             "checksum" : ""
         }
     ]
