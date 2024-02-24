@@ -1,11 +1,28 @@
-[{
+[
+{
+    "name" : "Serveur Mongo + MongoDB express",
+    "description" : "Uniquement Mongo avec MongoDB Express",
+    "vendor": "hackoeil",
+    "author" : "Cyril",
+    "directory" : "mongodb_mongoexpress",
+    "files" : [
+        { 
+            "link" : "", 
+            "checksum" : ""
+        }
+    ]
+},
+{
     "name" : "MySQL + PhpMyadmin",
     "description" : "Uniquement MySQL avec PhpMyadmin",
     "vendor": "hackoeil",
     "author" : "Cyril",
-    "directory" : "mysql_phpmyadmin",
+    "directory" : "apache_mysql_php",
     "files" : [
-        { "link" : "", "checksum" : ""}
+        { 
+            "link" : "https://github.com/Hack-Oeil/repo-original-study-hub/blob/master/study-hub/apache_mysql_php/study-hub.yaml", 
+            "checksum" : ""
+        }
     ]
 },
 {
@@ -13,8 +30,25 @@
     "description" : "Uniquement Mongo avec MongoDB Express",
     "vendor": "hackoeil",
     "author" : "Cyril",
-    "directory" : "mongo_mongodb_express",
+    "directory" : "nodejs_mongodb",
     "files" : [
-        { "link" : "", "checksum" : ""}
+        { 
+            "link" : "https://github.com/Hack-Oeil/repo-original-study-hub/blob/master/study-hub/nodejs_mongodb/study-hub.yaml", 
+            "checksum" : ""
+        }
     ]
-}]
+},
+{
+    "name" : "Serveur MySQL + NodeJS",
+    "description" : "NodeJS + MySQL",
+    "vendor": "hackoeil",
+    "author" : "Cyril",
+    "directory" : "nodejs_mysql",
+    "files" : [
+        { 
+            "link" : "https://github.com/Hack-Oeil/repo-original-study-hub/blob/master/study-hub/nodejs_mysql/study-hub.yaml", 
+            "checksum" : ""
+        }
+    ]
+}
+]

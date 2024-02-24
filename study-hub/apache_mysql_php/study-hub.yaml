@@ -1,0 +1,83 @@
+name: Environnement PHP
+author: Cyrhades
+description: Environnement LAMP, Apache / MySQL / PHP / PhpMyAdmin
+concern: development
+options:
+  - name: STH_DIR_DATA_PHP
+    label: Persistance des données WEB
+    type: directory
+    default: ./web
+  - name: STH_DIR_DATA_SQL
+    label: Persistance des données SQL
+    type: directory
+    default: ./data
+options_advanced:
+  - name: STH_PHP_VERSION
+    label: Version PHP
+    type: select
+    choices:
+      - '8.3'
+      - '8.2'
+      - '8.1'
+      - '8.0'
+      - '7.4'
+      - '7.3'
+      - '7.2'
+      - '7.1'
+      - '7.0'
+    default: '8.3'
+  - name: STH_SQL_PASSWORD_USERNAME
+    label: MySQL root password
+    type: text
+    default: root
+  - name: STH_SQL_HOSTNAME
+    label: Nom du serveur MySQL
+    type: text
+    default: server.sql
+  - name: STH_PORT_SQL
+    label: Port du serveur MySQL
+    type: text
+    default: 3306
+  - name: STH_PORT_HTTP
+    label: Port Http (Apache)
+    type: text
+    default: 80
+  - name: STH_PORT_PHPMYADMIN
+    label: Port PhpMyAdmin
+    type: text
+    default: 8080
+docker-compose-template:
+  version: '3.9'
+  services:
+    db:
+      image: mysql
+      container_name: STH_SQL_HOSTNAME
+      restart: always
+      environment:
+        MYSQL_ROOT_USERNAME: root
+        MYSQL_ROOT_PASSWORD: STH_SQL_PASSWORD_USERNAME
+      ports:
+        - STH_PORT_SQL:3306
+      volumes:
+        - STH_DIR_DATA_SQL:/var/lib/mysql
+    phpmyadmin:
+      image: phpmyadmin
+      restart: always
+      environment:
+        PMA_HOST: STH_SQL_HOSTNAME
+        PMA_PORT: 3306
+        PMA_ARBITRARY: 1
+      ports:
+        - STH_PORT_PHPMYADMIN:80
+      depends_on:
+        - db
+    apache_php:
+      image: php:STH_PHP_VERSION-apache
+      container_name: apache_php
+      restart: always
+      ports:
+        - STH_PORT_HTTP:80
+      volumes:
+        - STH_DIR_DATA_PHP:/var/www/html
+      depends_on:
+        - db
