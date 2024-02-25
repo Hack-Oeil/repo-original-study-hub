@@ -21,7 +21,7 @@
     "files" : [
         { 
             "link" : "https://raw.githubusercontent.com/Hack-Oeil/repo-original-study-hub/master/study-hub/apache_mysql_php/study-hub.yaml", 
-            "checksum" : "dcd5818add6ae79c62faef52bcbd5179e3633e7ad82236e3f7ab6817b85d5849d53e3ce3a46c44cc989caacc77a2"
+            "checksum" : "ba511ee2982734fc22ff11174f418bfdd0fe747432d4f0a77270709a7345862f2526efc7edda6bc616171c9316a4dab4"
         }
     ]
 },
@@ -34,7 +34,7 @@
     "files" : [
         { 
             "link" : "https://raw.githubusercontent.com/Hack-Oeil/repo-original-study-hub/master/study-hub/nodejs_mongodb/study-hub.yaml", 
-            "checksum" : "95b728a887e713c24372967953619ce295be9bd7736db2d391276eaf98237f55111e9e238369417aa75a32524e1"
+            "checksum" : "dcd5818add6ae79c62faef52bcbd5179e3633e7ad82236e3f7ab6817b85d5849d53e3ce3a46c44cc989caacc77a2"
         }
     ]
 },
@@ -47,7 +47,7 @@
     "files" : [
         { 
             "link" : "https://raw.githubusercontent.com/Hack-Oeil/repo-original-study-hub/master/study-hub/nodejs_mysql/study-hub.yaml", 
-            "checksum" : "a0abd458d12dc485b8c349f93cec6c8b5e38af847fcb0df321075554ebdb0d1a7c58db3bb8e21cc3d3e7ab4942aa"
+            "checksum" : "95b728a887e713c24372967953619ce295be9bd7736db2d391276eaf98237f55111e9e238369417aa75a32524e1"
         }
     ]
 }
